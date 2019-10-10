@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Home Student - Log In</title>
+  </head>
+  <body class="#9575cd deep-purple lighten-2">
+    <nav>
+      <div class="nav-wrapper">
+        <a>Welcome Back To School!!!</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="https://admission.ug.edu.gh/applying/">Registration Forum</a></li>
+          <li><a href="http://cbas.ug.edu.gh/">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+     <div class='centered' class="row">
+                <div class="col s12 m6">
+                  <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                      <span class="card-title">Log In</span>
+                      
+  <div class="row">
+        <form  name='loginHome' class="col s12" method='POST'  action='/changes' onsubmit="return valid()" >
+          <div class="row">
+            <div class="input-field col s12">
+              <input  id="student" type="text" pattern="\d*" class="validate"  name='idnum' maxlength="8" minlength="8">
+              <label for="student">Student ID</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="password" type="password" class="validate"  name='pin' maxlength="4">
+            <label for="password">Pin</label>
+          </div>
+        </div>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+
+        </form>
+     
+                  </div>
+                </div>
+              </div>
+
+  
+
+              <footer class="#673ab7 deep-purple">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col l6 s12">
+                          <h5 class="white-text">Get Yourself Logged In</h5>
+                          <p class="grey-text text-lighten-4">  Univerity of Ghana - Legon Students Information Enabler.
+                                Log in to get started on and verify your registration!!.</p>
+                        </div>
+                       
+                    </div>
+                    <div class="footer-copyright" >
+                      <div class="container">
+                      © 2014 Copyright Text
+                      <a class="grey-text text-lighten-4 right" href="https://www.ug.edu.gh/"><h8>University of Ghana</h8></a>
+                      </div>
+                    </div>
+                  </footer>
+
+                  <nav>
+                        <div class="nav-wrapper">
+                          <div class="col s12">
+                           <div class=''> <a href="http://www.ugsrc.com/" class="breadcrumb" class="btn">SRC</a></div>
+                          <div class='#29b6f6 light-blue lighten-1'> <a href="https://ienabler.ug.edu.gh/pls/prodi41/w99pkg.mi_login" class="breadcrumb" class="btn">LOG IN - Alternative</a></div>
+                           <div class='#2e7d32 green darken-3'> <a href="http://hs.ug.edu.gh/helpspot/" class="breadcrumb" class="btn">Help Spot</a></div>
+                          </div>
+                        </div>
+                      </nav>
+<script>
+function valid(){
+  
+  var id = document.forms['loginHome']["idnum"];
+  var pin_num = document.forms['loginHome']['pin'];
+
+  if(id.value == '' ){
+    alert("Must Enter ID!");
+    id.focus();
+    return false;
+  }
+  if(pin_num.value== ''){
+    alert("Must Enter PIN!");
+    pin_num.focus();
+    return false;
+  }
+
+  return true
+
+  
+}
+</script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

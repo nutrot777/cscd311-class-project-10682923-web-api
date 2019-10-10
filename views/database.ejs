@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Verification</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body class="#90caf9 blue lighten-3">
+    <nav>
+      <div class="#0d47a1 blue darken-4r">
+        <a href="database.html" class="brand-logo center">Verification Center!</a>
+        <ul class="left hide-on-med-and-down">
+          <li><a href="https://ug.edu.gh">About</a></li>
+          <li><a href="home.html">Home Login</a></li>
+          <li class="active">
+            <a href="https://sts.ug.edu.gh/services/">STS</a>
+          </li>
+        </ul>
+      </div>
+    
+    </nav>
+
+
+    <table class='highlight'>
+            <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Hall</th>
+                  <th>Room Number</th>
+                  <th>Members</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+      
+                <tr>
+                    <td>Hillton Nutrot</td>
+                    <%docs.forEach(item=>{%>
+                    <td><%= item.halls%></td>
+                    <td><%= item.room%></td>
+                    <%})%>
+                    <td>
+                     
+                      <ul>
+
+                      <li>Ben Osofo</li>
+                      <li>David Frimpong</li>
+                    </ul></td>
+                  </tr>
+        
+             
+            
+            </tbody>
+          </table>
+      
+          <script>
+          
+          </script>
+
+
+
+<div> <p> If Placement Does Not Show, Go Back And Select Again,</p>
+<p>Don't Select More Than Once</p></div>
+    <footer class="#0d47a1 blue darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+           
+                <footer class="#0d47a1 blue darken-4">
+                        <div class="#0d47a1 blue darken-4">
+                          <div class="container">
+                          © 2014 Copyright Text
+                          <a class="grey-text text-lighten-4 right" href="https://www.ug.edu.gh/pad/publication/policies"></a>
+                          </div>
+                        </div>
+                      </footer> 
+      </div>
+    </footer>
+
+    <div class="col s12 m2">
+           <a href='https://www.ug.edu.gh/pad/contact-us' >Contact Us</a>
+          </div>
+          <div class="col s12 m2">
+           <a href='https://www.ug.edu.gh/about/enrolment-and-graduation-statistics'>Enrolment Facts</a>
+          </div>
+          <div class="col s12 m2">
+           <a href='https://www.ug.edu.gh/registry/office-registrar'>Office Of Registrar</a>
+          </div>
+  </body>
+</html>

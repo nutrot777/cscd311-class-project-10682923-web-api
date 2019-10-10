@@ -1,0 +1,21 @@
+{
+  "name": "schoolproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "'computeman' <'nutrot.compute@outlook.com'> ('charles.com')",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "body-parser": "^1.19.0",
+    "ejs": "2.7.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.3",
+    "multer": "1.4.2",
+    "nodemon": "^1.19.3"
+  }
+}
